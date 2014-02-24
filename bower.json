@@ -1,0 +1,21 @@
+{
+  "name": "angular-match-path",
+  "version": "0.1.0",
+  "authors": [
+    "L42y <423300@gmail.com>"
+  ],
+  "description": "AngularJS component for testing if element's href attribute value matches $location.path()",
+  "main": "angular-match-path.js",
+  "keywords": [
+    "angular"
+  ],
+  "license": "WTFPL",
+  "homepage": "https://github.com/L42y/angular-match-path",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
