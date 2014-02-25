@@ -34,6 +34,8 @@ angular.module('l42y.match-path', ['ngRoute']).provider('l42yMatchPath', functio
     restrict: 'A',
     controller: function ($scope, $element, $attrs) {
       var self = this;
+
+      testPathMatching (self, $attrs);
       $scope.$on('$routeChangeSuccess', function () {
         testPathMatching (self, $attrs);
       });
