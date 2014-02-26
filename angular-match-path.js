@@ -19,13 +19,15 @@ angular.module('l42y.match-path', ['ngRoute']).provider('l42yMatchPath', functio
   }
 
   function testPathMatching (scope, attrs) {
-    attrs.$observe('href', function (href) {
-      scope.isPathMatched =
-        matchPath(
-          $location.path(),
-          href,
-          attrs.l42yMatchPath
-        );
+    attrs.$observe('href', function (href, oldHref) {
+      if (href !== oldHref) {
+        scope.isPathMatched =
+          matchPath(
+            $location.path(),
+            href,
+            attrs.l42yMatchPath
+          );
+      }
     });
   }
 
